@@ -2,6 +2,13 @@ import React, { useEffect, useState } from "react";
 import CharacterCard from "./CharacterCard";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import styled from "styled-components";
+
+const Buttons = styled.button`
+  margin: 10px;
+  background-color: red;
+  color: red;
+`;
 
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
@@ -23,10 +30,10 @@ export default function CharacterList() {
   return (
     <section className="character-list">
       <Link to="/">
-        <button>Home</button>
+        <Buttons>Home</Buttons>
       </Link>
       <Link to="Search">
-        <button>Search</button>
+        <Buttons>Search</Buttons>
       </Link>
       {character.map(ind => (
         <CharacterCard

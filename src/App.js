@@ -7,10 +7,10 @@ import WelcomePage from "./components/WelcomePage";
 export default function App() {
   return (
     <main>
-      <Header />
-      <CharacterList />
-      <SearchForm />
       <WelcomePage />
+      <Header />
+      <SearchForm />
+      <CharacterList />
     </main>
   );
 }

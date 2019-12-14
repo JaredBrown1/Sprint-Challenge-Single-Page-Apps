@@ -1,11 +1,20 @@
 import React from "react";
+import styled from "styled-components";
+
+const Cards = styled.div`
+  border: 1px solid red;
+  margin: 2%;
+  background-color: #abd5ec;
+  border-radius: 10px;
+  padding: 3%;
+`;
 
 export default function CharacterCard({ name, species, status }) {
   return (
-    <div>
+    <Cards>
       <h3>Name:{name}</h3>
       <p>Species:{species}</p>
       <p>Status:{status}</p>
-    </div>
+    </Cards>
   );
 }

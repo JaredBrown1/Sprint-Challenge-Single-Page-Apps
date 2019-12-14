@@ -2,6 +2,13 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import CharacterCard from "./CharacterCard";
 import { Link } from "react-router-dom";
+import styles from "styled-components";
+
+const Buttons = styles.button`
+margin: 10px;
+background-color: green;
+color: white;
+`;
 
 export default function SearchForm() {
   const [data, setData] = useState([]);
@@ -32,7 +39,7 @@ export default function SearchForm() {
           onChange={handleInputChange}
         />
         <Link to="/">
-          <button>Home</button>
+          <Buttons>Home</Buttons>
         </Link>
       </form>
 
