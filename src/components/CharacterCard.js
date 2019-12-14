@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function CharacterCard(name, species, status) {
+export default function CharacterCard({ name, species, status }) {
   return (
     <div>
       <h3>Name:{name}</h3>
